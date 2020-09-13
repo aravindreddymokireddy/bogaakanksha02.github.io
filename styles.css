@@ -156,7 +156,7 @@
     }
     
     .footer a {
-        font-size: 20px;
+        font-size: 10px;
     }
     }
 
@@ -208,11 +208,11 @@
 
         .doctrates-section th,
         .doctrates-section td {
-            font-size: 15px;
+            font-size: 13px;
         }
 
         .footer a {
-            font-size: 12px;
+            font-size: 10px;
         }
     }
 
@@ -254,7 +254,7 @@
         }
 
         .footer a {
-            font-size: 14px;}
+            font-size: 10px;}
     }
 
 
