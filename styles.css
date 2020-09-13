@@ -1,0 +1,260 @@
+  
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.4)),url(./images/background.jpeg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* menu and logo */
+
+.nav-bar{
+    display: flex;
+    padding: 40px 120px;
+}
+.navi-logo img{
+    width: 120px;
+    cursor: pointer;
+}
+.nav-links{
+    flex: l;
+}
+.nav-links ul{
+    margin-left: 30px;
+    display: inline;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+.nav-links ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.nav-bar .fa{
+    display: none;
+}
+
+/* banner elements */
+
+.banner-title{
+    margin: 100px 150px;
+    color: #fff;
+}
+.banner-title h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.banner-title h1 span{
+    color: paleturquoise
+}
+
+/* responsive nature */
+
+@media(max-width: 1160px){
+    .navi-logo img{
+        margin-top: 15px;
+    }
+    .banner-title{
+        margin: 80px 40px;
+    }
+    .banner-title{
+        height: 80vh;
+    }
+    .banner-title h1{
+        font-size: 20px;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    .nav-links{
+        height: 100vh;
+        width: 200px;
+        background: black;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        text-align: left;
+        z-index: 2;
+        transition: 0.7s;
+    }
+
+    .fa-bars {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .nav-bar .fa {
+        display: block;
+        color: #fff;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    @media(max-width: 700px;){
+        
+    #about{
+        margin-top: 50px;
+    }
+    #about .header1 h1{
+        font-size: 3rem;
+        margin-top: 50px;
+    }
+    #about .about{
+        font-size: 2rem;
+    }
+    }
+}
+
+
+/* about */
+
+.header1{
+    margin: 50px 300px;
+    color: #fff;
+}
+.header1 h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+
+}
+.about{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.about span{
+    color: aqua;
+    font: bold;
+}
+
+/* quotes */
+
+.quotes-section{
+    font-family: sans-serif;
+    margin: 0px 30px;
+}
+.quotes-section h1{
+    text-align: center;
+    color: #fff;
+    margin: 30px 0 50px;
+    margin-bottom: 30px;
+    font-size: 60px;
+}
+.quotes{
+    margin: 10px 40px;
+}
+.quotes img{
+    width: auto;
+    height: 300px;
+    padding: 8px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+.quotes img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+/* gallery */
+
+.header{
+    margin: 50px 300px;
+    color: #fff;
+}
+.header h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.photos{
+    background: transparent;
+}
+.photo-wrapper .team{
+    display: flex;  
+    justify-content: space-between; 
+}
+.photo-wrapper .pic-1 .team{
+    margin-bottom: 25px;
+}
+.photo-wrapper .pics{
+    width: 30%;
+    height: auto;
+    cursor: pointer;
+
+}
+.photo-wrapper .pics img{
+    width: 95%;
+    display: block;
+    height: auto;
+    transition: all 0.5s ease;
+}
+.photo-wrapper .pics:hover img{
+    transform: scale(1.3,1.34);
+}
+
+@media(max-width: 1100px){
+    .photo-wrapper .pics img{
+        width: 30px;
+        display: flex;
+        height: auto;
+    }
+
+}
+
+/* docterates */ 
+
+.header{
+    margin: 20px 250px;
+    color: #fff;
+}
+.header h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+table, th, td{
+    width: 100%;
+    margin: auto;
+    border: 1px solid white;
+    border-collapse: justify;
+    text-align: center;
+    font-size: 15px;
+    table-layout:fixed;
+    background: black;
+    opacity: 0.5;
+    color:#fff;
+    margin-top: 10px;
+}
+th, td{
+    padding: 20px;
+    opacity: 10;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    background: black;
+}
+.footer a{
+    color: #fff;
+}

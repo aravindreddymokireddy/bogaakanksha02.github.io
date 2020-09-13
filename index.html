@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>WebSite Development</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/98a5377f28.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="hero">
+        <div class="nav-bar">
+            <div class="navi-logo">
+                <img src="./images/APJ.jpg">
+            </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="closemenu()"></i>
+                <br>
+                <ul>
+                    <a href="index.html"><li>HOME</li></a>
+                    <a href="about.html"><li>ABOUT</li></a>
+                    <a href="quotes.html"><li>QUOTES</li></a>
+                    <a href="doctrates.html"><li>DOCTRATES</li></a> 
+                    <a href="gallery.html"><li>GALLERY</li></a>                 
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </div>
+        <div class="banner-title">
+            <h1> Avul Pakir Jainulabdeen Abdul Kalam<br><span>"THE MISSILE MAN" </span>
+            </h1>
+        </div>
+        </div>
+        </div>
+        <script>
+            var show = document.getElementById("nav-links");
+            function showmenu(){
+                show.style.right="0"
+            }
+            function closemenu(){
+                show.style.right="-200px"
+            }
+        </script>
+    </body>
+</html>
